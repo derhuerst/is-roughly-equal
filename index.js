@@ -1,9 +1,10 @@
 'use strict'
 
 const notEnoughArgs = new Error('not enough arguments')
-const missingArgs = function () { throw notEnoughArgs }
 
 
+
+const nullary = _ => unary(1)
 
 const unary = function (tolerance) {
 	if (arguments.length < 1) throw notEnoughArgs
@@ -26,7 +27,7 @@ const ternary = function (tolerance, a, b) {
 	return Math.abs(b - a) <= tolerance
 }
 
-const arities = [missingArgs, unary, binary, ternary]
+const arities = [nullary, unary, binary, ternary]
 const auto = function (tolerance, a, b) {
 	return arities[arguments.length](tolerance, a, b)
 }

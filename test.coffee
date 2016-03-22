@@ -126,6 +126,23 @@ module.exports =
 
 	'isRoughlyEqual':
 
+		'with 0 args':
+
+			'is a function': (t) ->
+				t.expect 1
+				t.strictEqual typeof iRE(), 'function'
+				t.done()
+
+			'uses 1 as tolerance': (t) ->
+				x = iRE()
+				t.expect 5
+				t.strictEqual x(10, 8.9),  false
+				t.strictEqual x(10, 9),    true
+				t.strictEqual x(10, 10),   true
+				t.strictEqual x(10, 11),   true
+				t.strictEqual x(10, 11.1), false
+				t.done()
+
 		'curried by 1 arg':
 
 			'is a function': (t) ->
