@@ -29,7 +29,7 @@ isRoughlyEqual(10)   // true
 isRoughlyEqual(9)    // true
 isRoughlyEqual(8.9)  // false
 
-const check = isRoughlyEqual 1, 10 // equal to 10 with tolerance of 1
+const check = isRoughlyEqual(1, 10) // equal to 10 with tolerance of 1
 check(11.1) // false
 check(11)   // true
 check(10)   // true
