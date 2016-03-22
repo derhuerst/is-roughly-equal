@@ -1,0 +1,23 @@
+{
+	"name":        "is-roughly-equal",
+	"description": "Check if a number is within a certain fault tolerance to another.",
+	"version":     "0.1.0",
+	"main":        "./index.js",
+	"files":       ["./index.js"],
+	"keywords":    ["equal", "roughly", "tolerance", "number", "compare"],
+	"author":      "Jannis R <mail@jannisr.de>",
+	"homepage":    "https://github.com/derhuerst/is-roughly-equal",
+	"repository":  "https://github.com/derhuerst/is-roughly-equal.git",
+	"license":     "ISC",
+	"engine":      "node >= 4",
+	"devDependencies": {
+		"coffee-script": "^1.10",
+		"nodeunit":      "^0.9.1",
+		"watchy":        "^0.6.6"
+	},
+	"scripts": {
+		"test":       "nodeunit --reporter minimal test.coffee",
+		"test:watch": "watchy -s -w . nodeunit --reporter minimal test.coffee",
+		"prepublish": "npm test"
+	}
+}
