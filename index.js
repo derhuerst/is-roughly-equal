@@ -10,7 +10,7 @@ const unary = function (tolerance) {
 	if (arguments.length < 1) throw notEnoughArgs
 	return function (a, b) {
 		if (arguments.length < 2) throw notEnoughArgs
-		return Math.abs(b - a) <= tolerance
+		return ternary(tolerance, a, b)
 	}
 }
 
@@ -18,7 +18,7 @@ const binary = function (tolerance, a) {
 	if (arguments.length < 2) throw notEnoughArgs
 	return function (b) {
 		if (arguments.length < 1) throw notEnoughArgs
-		return Math.abs(b - a) <= tolerance
+		return ternary(tolerance, a, b)
 	}
 }
 
