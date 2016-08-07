@@ -1,4 +1,4 @@
-iRE = require './index.js'
+iRE = require './src/index.js'
 
 
 
