@@ -3,7 +3,7 @@
 	"description": "Check if a number is within a certain fault tolerance to another.",
 	"version":     "0.1.0",
 	"main":        "./lib/index.js",
-	"files":       ["./index.js"],
+	"files":       ["./lib/index.js"],
 	"keywords":    ["equal", "roughly", "tolerance", "number", "compare"],
 	"author":      "Jannis R <mail@jannisr.de>",
 	"homepage":    "https://github.com/derhuerst/is-roughly-equal",
