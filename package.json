@@ -11,15 +11,11 @@
 	"license":     "ISC",
 	"engine":      "node >= 4",
 	"devDependencies": {
-		"coffee-script": "^1.11.1",
-		"nodeunit":      "^0.10.2",
-		"watchy":        "^0.6.6",
-		"benchmark":     "^2.1.1"
+		"benchmark": "^2.1.1"
 	},
 	"scripts": {
-		"test":       "nodeunit --reporter minimal test.coffee",
-		"test:watch": "watchy -s -w . nodeunit --reporter minimal test.coffee",
+		"test": "node test.js",
 		"prepublish": "npm test",
-		"benchmark":  "./benchmark.js"
+		"benchmark": "./benchmark.js"
 	}
 }
