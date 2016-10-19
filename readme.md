@@ -6,8 +6,9 @@
 [![build status](https://img.shields.io/travis/derhuerst/is-roughly-equal.svg)](https://travis-ci.org/derhuerst/is-roughly-equal)
 [![dependency status](https://img.shields.io/david/derhuerst/is-roughly-equal.svg)](https://david-dm.org/derhuerst/is-roughly-equal#info=dependencies)
 [![dev dependency status](https://img.shields.io/david/dev/derhuerst/is-roughly-equal.svg)](https://david-dm.org/derhuerst/is-roughly-equal#info=devDependencies)
+![ISC-licensed](https://img.shields.io/github/license/derhuerst/is-roughly-equal.svg)
 
-*is-roughly-equal* [is ISC-licensed](license.md) and [tested well](test.coffee).
+*is-roughly-equal* is [well-tested](test.coffee).
 
 
 ## Installing
