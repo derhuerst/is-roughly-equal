@@ -8,7 +8,7 @@
 [![dev dependency status](https://img.shields.io/david/dev/derhuerst/is-roughly-equal.svg)](https://david-dm.org/derhuerst/is-roughly-equal#info=devDependencies)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/is-roughly-equal.svg)
 
-*is-roughly-equal* is [well-tested](test.coffee).
+*is-roughly-equal* is [well-tested](test.js).
 
 
 ## Installing
