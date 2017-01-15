@@ -1,6 +1,6 @@
 {
 	"name":        "is-roughly-equal",
-	"description": "Check if a number is within a certain fault tolerance to another.",
+	"description": "Check if a number is within a certain epsilon to another.",
 	"version":     "0.1.0",
 	"main":        "./index.js",
 	"files":       ["./index.js"],

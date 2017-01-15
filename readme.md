@@ -1,6 +1,6 @@
 # is-roughly-equal ❓
 
-**Check if a number is within a certain fault tolerance to another.** [Supports currying](#api).
+**Check if a number is within a certain epsilon to another.** [Supports currying](#api).
 
 [![npm version](https://img.shields.io/npm/v/is-roughly-equal.svg)](https://www.npmjs.com/package/is-roughly-equal)
 [![build status](https://img.shields.io/travis/derhuerst/is-roughly-equal.svg)](https://travis-ci.org/derhuerst/is-roughly-equal)
@@ -30,7 +30,7 @@ isRoughlyEqual(10)   // true
 isRoughlyEqual(9)    // true
 isRoughlyEqual(8.9)  // false
 
-const check = isRoughlyEqual(1, 10) // equal to 10 with tolerance of 1
+const check = isRoughlyEqual(1, 10) // equal to 10 with epsilon of 1
 check(11.1) // false
 check(11)   // true
 check(10)   // true
@@ -41,24 +41,24 @@ check(8.9)  // false
 
 ## API
 
-### `isRoughlyEqual([tolerance], [a], [b])`
+### `isRoughlyEqual([epsilon], [a], [b])`
 
 - Called **without arguments**, returns `isRoughlyEqual.unary(1)`.
-- Called **with 1 arguments** `tolerance`, returns `isRoughlyEqual.unary(tolerance)`
-- Called **with 2 arguments** `tolerance` and `a`, returns `isRoughlyEqual.binary(tolerance, a)`.
-- Called **with 3 arguments** `tolerance`, `a` and `b`, returns `isRoughlyEqual.ternary(tolerance, a, b)`.
+- Called **with 1 arguments** `epsilon`, returns `isRoughlyEqual.unary(epsilon)`
+- Called **with 2 arguments** `epsilon` and `a`, returns `isRoughlyEqual.binary(epsilon, a)`.
+- Called **with 3 arguments** `epsilon`, `a` and `b`, returns `isRoughlyEqual.ternary(epsilon, a, b)`.
 
-### `isRoughlyEqual.unary(tolerance)`
+### `isRoughlyEqual.unary(epsilon)`
 
-Returns a function `(a, b) => isRoughlyEqual.ternary(tolerance, a, b)`.
+Returns a function `(a, b) => isRoughlyEqual.ternary(epsilon, a, b)`.
 
-### `isRoughlyEqual.binary(tolerance, a)`
+### `isRoughlyEqual.binary(epsilon, a)`
 
-Returns a function `(b) => isRoughlyEqual.ternary(tolerance, a, b)`.
+Returns a function `(b) => isRoughlyEqual.ternary(epsilon, a, b)`.
 
-### `isRoughlyEqual.ternary(tolerance, a, b)`
+### `isRoughlyEqual.ternary(epsilon, a, b)`
 
-Returns `true` of `false`. **Checks if `a` is within a distance of `tolerance` to `b`.**
+Returns `true` of `false`. **Checks if `a` is within a distance of `epsilon` to `b`.**
 
 
 ## Contributing
