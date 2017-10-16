@@ -1,12 +1,13 @@
 # is-roughly-equal ❓
 
-**Check if a number is within a certain epsilon to another.** [Supports currying](#api).
+**Check if a number is within a certain epsilon to another.** [Supports currying](#api). Similar to [`almost-equal`](https://github.com/scijs/almost-equal).
 
 [![npm version](https://img.shields.io/npm/v/is-roughly-equal.svg)](https://www.npmjs.com/package/is-roughly-equal)
 [![build status](https://img.shields.io/travis/derhuerst/is-roughly-equal.svg)](https://travis-ci.org/derhuerst/is-roughly-equal)
 [![dependency status](https://img.shields.io/david/derhuerst/is-roughly-equal.svg)](https://david-dm.org/derhuerst/is-roughly-equal#info=dependencies)
 [![dev dependency status](https://img.shields.io/david/dev/derhuerst/is-roughly-equal.svg)](https://david-dm.org/derhuerst/is-roughly-equal#info=devDependencies)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/is-roughly-equal.svg)
+[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
 
 *is-roughly-equal* is [well-tested](test.js).
 
